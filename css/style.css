@@ -100,7 +100,7 @@ h2 {
     position: relative;
 }
 
-.thumbnails2 {
+#thumbnails2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,26 +179,52 @@ h4 {
 
 /* INTERIOR */
 #Bellagio {
-    padding: 2%;
-    grid-area: project1;
-    transition: 0.3s;
+    padding: 15% 20% 13% 20%;
+    grid-area: Bellagio;
+    transition: 0.6s;
     background: url(../images/Bellagio1.jpg) no-repeat;
-    background-size: 260px 260px;
+    background-size: 300px;
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+
+/* hover state */
+#Bellagio:hover {
+    padding: 100%;
+    background: url(../images/Bellagio2.jpg) no-repeat;
+    background-size: 300px;
 }
 
 #RWHK {
-    padding: 2%;
-    grid-area: project1;
-    transition: 0.3s;
+    padding: 20% 10% 25% 20%;
+    grid-area: Bellagio;
+    transition: 0.6s;
     background: url(../images/RWHK1.jpg) no-repeat;
-    background-size: 260px 260px;
+    background-size: 250px;
+    position: absolute;
+    top: 650px;
+    left: 300px;
+}
+
+#RWHK:hover {
+    background: url(../images/RWHK2.jpg) no-repeat;
+    background-size: 250px;
 }
 
 #FSPB {
     padding: 2%;
-    grid-area: project1;
-    transition: 0.3s;
+    grid-area: Bellagio;
+    transition: 0.6s;
     background: url(../images/FSPB1.jpg) no-repeat;
+    background-size: 260px 260px;
+    position: absolute;
+    top: 860px;
+    left: 700px;
+}
+
+#FSPB:hover {
+    background: url(../images/FSPB2.jpg) no-repeat;
     background-size: 260px 260px;
 }
 
