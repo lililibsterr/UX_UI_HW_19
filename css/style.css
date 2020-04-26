@@ -1,0 +1,253 @@
+/*header menu*/
+#navigation {
+    height:80px;
+    padding:1%;
+    display:flex;
+    align-items: center;
+    position: relative;
+    background-color: #2071AF;
+}
+
+.logo {
+    padding:1%;
+    text-align:left;
+}
+
+.menu {
+    position: absolute;
+    right:0;
+    letter-spacing: 0em;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    /* letter-spacing: .10em; */
+    text-transform: lowercase;
+    padding: 1%;
+}
+
+.menu1 {
+    color: #FADA1F;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+/* a:link {color:#FFFAFA;}      /* unvisited link */
+/* a:visited {color:#FFFAFA;}  /* visited link */
+/* a:hover {color:#FFFAFA;}  /* mouse over link */
+/* a:active {color:#FFFAFA;}  /* selected link */
+
+/*hero space*/
+.content {
+    font-family: 'Arapey';
+    color: white;
+    font-size: 14px;
+    /*letter-spacing: .10em;*/
+}
+
+h2 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.heroImg {
+    height:300px;
+    background-color: #2071AF;
+    width: 100%;
+    /*padding: 0; */
+}
+/* main content & works*/
+#works {
+    background-color: #FBF3E8;
+    height: 900px;
+}
+
+.work-options {
+    font-family: 'Arapey';
+    text-align: center;
+    color: black;
+    padding: 5%;
+}
+
+.tag1 {
+    padding: 2%;
+}
+
+.tag2 {
+    padding: 2%;
+}
+
+/* work thumbnails*/
+#thumbnails {
+    /* margin: 0px 150px 0px 150px; */
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px;
+    grid-template-areas: 
+    "project1 project2"
+    "project3 project4";
+}
+
+.thumbnails {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    /* box-shadow: 3px 3px rgb(0, 0, 0, 0.5); */
+    cursor: pointer;
+    display: grid;
+    position: relative;
+}
+
+.thumbnails2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    /* box-shadow: 3px 3px rgb(0, 0, 0, 0.5); */
+    cursor: pointer;
+    display: grid;
+    position: relative;
+}
+
+h4 {
+    position: absolute;
+    top: 250px;
+    font-family: 'open sans';
+    font-size: 12px;
+}
+
+#project1 {
+    padding: 2%;
+    grid-area: project1;
+    transition: 0.3s;
+    background: url(../images/Project1.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+/* hover state */
+#project1:hover {
+    background: url(../images/Project1title.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#project2 {
+    padding: 2%;
+    grid-area: project2;
+    transition: 0.3s;
+    background: url(../images/Project2.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#project2:hover {
+    background: url(../images/Project2title.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#project3 {
+    /* position: inline-block; */
+    /* box-sizing: border-box;
+    height: 518px;
+    width: 588px; */
+    /* transform: scale(.5); */
+    padding: 2%;
+    grid-area: project3;
+    transition: 0.3s;
+    background: url(../images/Project3.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#project3:hover {
+    background: url(../images/Project3title.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+/* Will replace with new project */
+#project4 {
+    padding: 2%;
+    grid-area: project4;
+    transition: 0.3s;
+    background: url(../images/Project1.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#project4:hover {
+    background: url(../images/Project1title.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+/* INTERIOR */
+#Bellagio {
+    padding: 2%;
+    grid-area: project1;
+    transition: 0.3s;
+    background: url(../images/Bellagio1.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#RWHK {
+    padding: 2%;
+    grid-area: project1;
+    transition: 0.3s;
+    background: url(../images/RWHK1.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+#FSPB {
+    padding: 2%;
+    grid-area: project1;
+    transition: 0.3s;
+    background: url(../images/FSPB1.jpg) no-repeat;
+    background-size: 260px 260px;
+}
+
+/* footer */
+#footer {
+    display: flex;
+}
+
+.footer-note {
+    margin-left: 50px;
+    display: flex;
+    font-family: 'Arapey';
+    font-weight: 400;
+}
+
+.social-media {
+    position: absolute;
+    right:50px;
+    letter-spacing: 0em;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    /* letter-spacing: .10em; */
+    padding: 2%;
+}
+
+.menu2 {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #thumbnails {
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 300px;
+        grid-template-areas: 
+        "project1"
+        "project2"
+        "project3"
+        "project4";
+    }
+
+    #works {
+        height: 1500px;
+    }
+
+    .footer-note {
+        margin-left: 0px;
+}}
