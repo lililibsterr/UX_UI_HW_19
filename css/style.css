@@ -80,6 +80,7 @@ html {
 /* work thumbnails*/
 #uxui {
     /* margin: 0px 150px 0px 150px; */
+    height: 600px;
     display: grid;
     justify-content: center;
     grid-template-rows: 300px 300px;
@@ -108,23 +109,38 @@ h4 {
 }
 
 #interior {
+    height: 600px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     /* margin: 20px; */
     /* box-shadow: 3px 3px rgb(0, 0, 0, 0.5); */
     cursor: pointer;
-    display: grid;
+    /* display: grid; */
     position: relative;
 }
 
-.interior h4 {
+h3 {
  position: absolute;
  top: 200px;
  font-family: 'open sans';
  font-size: 12px;   
 }
 
+h5 {
+    position: absolute;
+    top: 320px;
+    font-family: 'open sans';
+    font-size: 12px;   
+}
+
+h6 {
+    position: absolute;
+    top: 143px;
+    font-family: 'open sans';
+    font-size: 12px;   
+}
+   
 #project1 {
     padding: 2%;
     grid-area: project1;
@@ -193,7 +209,7 @@ h4 {
     background-size: 300px;
     position: absolute;
     top: 150px;
-    left: 300px;
+    left: 500px;
 }
 
 /* hover state */
@@ -210,7 +226,7 @@ h4 {
     background-size: 250px;
     position: absolute;
     top: 420px;
-    left: 100px;
+    left: 300px;
 }
 
 #RWHK:hover {
@@ -225,8 +241,8 @@ h4 {
     background: url(../images/FSPB1.jpg) no-repeat;
     background-size: 300px;
     position: absolute;
-    top: 800px;
-    left: 400px;
+    top: 700px;
+    left: 600px;
 }
 
 #FSPB:hover {
