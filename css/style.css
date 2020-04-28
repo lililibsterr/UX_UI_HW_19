@@ -59,7 +59,7 @@ h2 {
 /* main content & works*/
 #works {
     background-color: #FBF3E8;
-    height: 900px;
+    height: 1800px;
 }
 
 .work-options {
@@ -76,9 +76,9 @@ h2 {
 html {
     scroll-behavior: smooth;
   }
-  
+
 /* work thumbnails*/
-#thumbnails {
+#uxui {
     /* margin: 0px 150px 0px 150px; */
     display: grid;
     justify-content: center;
@@ -100,22 +100,29 @@ html {
     position: relative;
 }
 
-#thumbnails2 {
+h4 {
+    position: absolute;
+    top: 250px;
+    font-family: 'open sans';
+    font-size: 12px;
+}
+
+#interior {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 20px;
+    /* margin: 20px; */
     /* box-shadow: 3px 3px rgb(0, 0, 0, 0.5); */
     cursor: pointer;
     display: grid;
     position: relative;
 }
 
-h4 {
-    position: absolute;
-    top: 250px;
-    font-family: 'open sans';
-    font-size: 12px;
+.interior h4 {
+ position: absolute;
+ top: 200px;
+ font-family: 'open sans';
+ font-size: 12px;   
 }
 
 #project1 {
@@ -185,13 +192,12 @@ h4 {
     background: url(../images/Bellagio1.jpg) no-repeat;
     background-size: 300px;
     position: absolute;
-    top: 350px;
-    left: 500px;
+    top: 150px;
+    left: 300px;
 }
 
 /* hover state */
 #Bellagio:hover {
-    padding: 100%;
     background: url(../images/Bellagio2.jpg) no-repeat;
     background-size: 300px;
 }
@@ -203,8 +209,8 @@ h4 {
     background: url(../images/RWHK1.jpg) no-repeat;
     background-size: 250px;
     position: absolute;
-    top: 650px;
-    left: 300px;
+    top: 420px;
+    left: 100px;
 }
 
 #RWHK:hover {
@@ -213,19 +219,19 @@ h4 {
 }
 
 #FSPB {
-    padding: 2%;
+    padding: 15% 20% 13% 20%;
     grid-area: Bellagio;
     transition: 0.6s;
     background: url(../images/FSPB1.jpg) no-repeat;
-    background-size: 260px 260px;
+    background-size: 300px;
     position: absolute;
-    top: 860px;
-    left: 700px;
+    top: 800px;
+    left: 400px;
 }
 
 #FSPB:hover {
     background: url(../images/FSPB2.jpg) no-repeat;
-    background-size: 260px 260px;
+    background-size: 300px;
 }
 
 /* footer */
