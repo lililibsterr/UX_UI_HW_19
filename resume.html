@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" type="text/css" href="css/resume.css">
+    
+    <!-- scripts -->
+    <script src="Javascript/particles.js"></script>
+    <script src="Javascript/resume.js"></script>
+    <script src="Javascript/particles.min.js"></script>
 </head>
+
 <body>
     <!--HEADER-->
     <header id="navigation">
@@ -15,14 +21,51 @@
         <nav class="menu">
             <a class="menu1" href="index.html">work</a>
             <a class="menu1" href="about.html">about me</a>
-            <a class="menu1" href="#">résumé</a>
+            <a class="menu1" href="resume.html">résumé</a>
         </nav>
     </header>
     <!-- RESUME -->
+    <div id="particles-js"></div>
     <div id="resume">
         <img class="image" src="images/Resume.JPG">
         <button>DOWNLOAD RÉSUMÉ</button>
     </div>
+
+    <!-- particles.js container --> 
+        <div id="particles-js"></div>
+
+    <!-- stats - count particles --> 
+        <div class="count-particles"> 
+            <span class="js-count-particles">--</span> particles 
+        </div> 
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+        <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+
+    <!-- stats.js lib --> 
+        <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    
+    <!-- stats.js -->
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles'); 
+        update = function() { 
+            stats.begin(); 
+            stats.end(); 
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { 
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; 
+            }
+            requestAnimationFrame(update); 
+        }; 
+        requestAnimationFrame(update);;
+    </script>
+
     <!--FOOTER-->
     <footer id="footer">
         <p class="footer-note">Made with &hearts; by Libby</p>
