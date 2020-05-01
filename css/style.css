@@ -202,7 +202,8 @@ h6 {
 
 /* INTERIOR */
 #Bellagio {
-    padding: 15% 20% 13% 20%;
+    height: 210px;
+    width: 300px;
     grid-area: Bellagio;
     transition: 0.6s;
     background: url(../images/Bellagio1.jpg) no-repeat;
