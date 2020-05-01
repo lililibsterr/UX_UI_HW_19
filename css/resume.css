@@ -36,23 +36,20 @@
 /* CONTENT */
 #resume {
     background-color: #FBF3E8;
-    height: 1000px;
+    height: 1200px;
     margin-top: 0px;
 }
 
 .image {
     width: 50%;
     height: auto;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin: 100px 25% 25px 25%;
     background-color: #FBF3E8;
     /* position: absolute; */
 }
 
 button {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -66,4 +63,35 @@ button {
 button:hover {
     background: black;
     color: white;
+}
+
+/* footer */
+#footer {
+    display: flex;
+}
+
+.footer-note {
+    margin-left: 50px;
+    display: flex;
+    font-family: 'Arapey';
+    font-weight: 400;
+}
+
+.social-media {
+    position: absolute;
+    right:50px;
+    letter-spacing: 0em;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    /* letter-spacing: .10em; */
+    padding: 2%;
+}
+
+.menu2 {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 5px;
 }
