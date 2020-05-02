@@ -37,7 +37,7 @@
 /* a:hover {color:#FFFAFA;}  /* mouse over link */
 /* a:active {color:#FFFAFA;}  /* selected link */
 
-/*hero space*/
+/*HERO SPACE*/
 .content {
     font-family: 'Arapey';
     color: white;
@@ -56,10 +56,11 @@ h2 {
     width: 100%;
     /*padding: 0; */
 }
-/* main content & works*/
+
+/* MAIN CONTENT & WORKS */
 #works {
     background-color: #FBF3E8;
-    height: 1800px;
+    height: 1500px;
 }
 
 .work-options {
@@ -71,15 +72,18 @@ h2 {
 
 .tag {
     padding: 2%;
+    color: #2071AF;
+    font-size: 24px;
 }
 
 html {
     scroll-behavior: smooth;
   }
 
-/* work thumbnails*/
+/* WORK THUMBNAILS */
 #uxui {
     /* margin: 0px 150px 0px 150px; */
+    padding: 0px 50px 50px 50px;
     height: 600px;
     display: grid;
     justify-content: center;
@@ -106,18 +110,6 @@ h4 {
     top: 250px;
     font-family: 'open sans';
     font-size: 12px;
-}
-
-#interior {
-    height: 600px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* margin: 20px; */
-    /* box-shadow: 3px 3px rgb(0, 0, 0, 0.5); */
-    cursor: pointer;
-    /* display: grid; */
-    position: relative;
 }
 
 h3 {
@@ -149,7 +141,7 @@ h6 {
     background-size: 260px 260px;
 }
 
-/* hover state */
+/* HOVER STATE */
 #project1:hover {
     background: url(../images/Project1title.jpg) no-repeat;
     background-size: 260px 260px;
@@ -201,6 +193,18 @@ h6 {
 }
 
 /* INTERIOR */
+#interior {
+    padding: 50px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 300px 350px;
+    grid-template-areas: 
+    "RWHK Bellagio"
+    "RWHK FSPB";
+}
+
 #Bellagio {
     height: 210px;
     width: 300px;
@@ -208,9 +212,9 @@ h6 {
     transition: 0.6s;
     background: url(../images/Bellagio1.jpg) no-repeat;
     background-size: 300px;
-    position: absolute;
-    top: 150px;
-    left: 500px;
+    /* position: absolute; */
+    /* top: 100px;
+    left: 500px; */
 }
 
 /* hover state */
@@ -220,14 +224,17 @@ h6 {
 }
 
 #RWHK {
-    padding: 20% 10% 25% 20%;
-    grid-area: Bellagio;
+    top: 30px;
+    height: 336.65px;
+    width: 250px;
+    /* padding: 20% 10% 25% 20%; */
+    grid-area: RWHK;
     transition: 0.6s;
     background: url(../images/RWHK1.jpg) no-repeat;
     background-size: 250px;
-    position: absolute;
-    top: 420px;
-    left: 300px;
+    /* position: absolute; */
+    /* top: 150px;
+    left: 300px; */
 }
 
 #RWHK:hover {
@@ -236,14 +243,15 @@ h6 {
 }
 
 #FSPB {
-    padding: 15% 20% 13% 20%;
-    grid-area: Bellagio;
+    height: 168.6px;
+    width: 300px;
+    grid-area: FSPB;
     transition: 0.6s;
     background: url(../images/FSPB1.jpg) no-repeat;
     background-size: 300px;
-    position: absolute;
-    top: 700px;
-    left: 600px;
+    /* position: absolute; */
+    /* top: 70px;
+    left: 600px; */
 }
 
 #FSPB:hover {
@@ -283,7 +291,7 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-    #thumbnails {
+    #uxui {
         grid-template-rows: 300px 300px 300px 300px;
         grid-template-columns: 300px;
         grid-template-areas: 
@@ -291,6 +299,19 @@ h6 {
         "project2"
         "project3"
         "project4";
+    }
+
+    #interior {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        /* grid-template-rows: 210px 336.65px 165.6px;
+        grid-template-columns: 300px;
+        grid-template-areas:
+        "Bellagio"
+        "RWHK"
+        "FSPB"; */
     }
 
     #works {
