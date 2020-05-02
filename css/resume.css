@@ -49,18 +49,23 @@ li{list-style:none}
 }
 
 /* CONTENT */
-/* #resume {
+#resume {
     background-color: #FBF3E8;
     height: 1200px;
     margin-top: 0px;
-} */
+    background: url(../images/Resume.JPG) no-repeat;
+    background-size: 500px;
+    /* z-index: 100; */
+}
 
 .image {
     width: 50%;
     height: auto;
     margin: 100px 25% 25px 25%;
-    background-color: #FBF3E8;
-    /* position: absolute; */
+    /* background-color: #FBF3E8; */
+    /* background: url(../images/Resume.JPG) no-repeat;
+    background-size: 500px;
+    z-index: 100; */
 }
 
 button {
