@@ -53,7 +53,7 @@ li{list-style:none}
     background-color: #FBF3E8;
     height: 1200px;
     margin-top: 0px;
-    background: url(../images/Resume.JPG) no-repeat;
+    /* background: url(../images/Resume.JPG) no-repeat; */
     background-size: 500px;
     /* z-index: 100; */
 }
@@ -61,7 +61,7 @@ li{list-style:none}
 .image {
     width: 50%;
     height: auto;
-    margin: 100px 25% 25px 25%;
+    margin: 50px 25% 25px 25%;
     /* background-color: #FBF3E8; */
     /* background: url(../images/Resume.JPG) no-repeat;
     background-size: 500px;
