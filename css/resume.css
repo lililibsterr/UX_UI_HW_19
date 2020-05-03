@@ -51,33 +51,56 @@ li{list-style:none}
 /* CONTENT */
 #resume {
     background-color: #FBF3E8;
-    height: 1200px;
+    height: 1100px;
     margin-top: 0px;
     /* background: url(../images/Resume.JPG) no-repeat; */
     background-size: 500px;
     /* z-index: 100; */
+    position: relative;
+    /* display: inline; */
 }
 
 .image {
-    width: 50%;
-    height: auto;
-    margin: 50px 25% 25px 25%;
+    height: 100vh;
+    /* height: 600px; */
+    padding: 100px 50px 20px 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 800px;
+    grid-template-columns: 600px;
+    grid-template-areas: 
+    "resume";
+}
+
+.resume_image {
+    /* width: auto;
+    height: 50%; */
+    /* margin: 50px 25% 25px 25%; */
     /* background-color: #FBF3E8; */
-    /* background: url(../images/Resume.JPG) no-repeat;
-    background-size: 500px;
-    z-index: 100; */
+    padding: 2%;
+    background: url(../images/Resume.JPG) no-repeat;
+    background-size: 600px;
+    border: rgb(155, 155, 155) solid 1px;
+    z-index: 100;
+    /* position: absolute; */
+    grid-area: resume;
+}
+
+.button {
+    text-align: center;
 }
 
 button {
     /* margin-top: 30px; */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
     border-color: black;
     background-color: #FBF3E8;
     color: black;
+    /* position: absolute; */
     padding: 15px 10px;
     font-family: 'Open Sans';
+    z-index: 100;
 }
 
 button:hover {
@@ -132,7 +155,8 @@ button:hover {
     background-image: url(""); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    background-position: 50% 50%; 
+    background-position: 50% 50%;
+    z-index: 10;
 }
 
 /* FOOTER */
