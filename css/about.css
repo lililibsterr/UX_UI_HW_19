@@ -33,6 +33,45 @@
     margin-right: 15px;
 }
 
+/* MOUSEOVER */
+/* .popover1 {
+    top: 10px; 
+    left: 10px; 
+    position: relative;
+}
+#big { 
+    z-index: 999; 
+    position:absolute; 
+    text-align:center; 
+    padding:2px; 
+    background-color:#fff; 
+    border:1px solid #999; 
+}
+
+#big img { 
+    height: 250px; 
+} */
+
+.img {
+    display: none;
+    height: 70%;
+    left: 50%;
+    opacity: .9;
+    position: fixed;
+    top: 15%
+    }
+
+.hover {
+    text-decoration: none;
+    text-decoration-color: inherit;
+    border-color: inherit;
+    border-style: dotted;
+    border-width: 0 0 1px;
+    transition: border-color .2s ease-in-out;
+    -moz-transition: border-color .2s ease-in-out;
+    -webkit-transition: border-color .2s ease-in-out
+}
+
 /* About Me Content */
 /* #aboutMe {
     margin-left: 100px;
