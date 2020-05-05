@@ -120,3 +120,5 @@ particlesJS("particles-js",
     "retina_detect":true
     }
 );
+
+console.log("Your app.js file is loaded correctly!");

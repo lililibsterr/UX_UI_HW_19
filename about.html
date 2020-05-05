@@ -35,22 +35,49 @@
             <br>
             <br>
             More about me: 
-            <a href="image">Ice cream enthusiast</a>, <span class="hover link_doggies">mother of two dogs</span>, <a href="image">enjoys Korean entertainment</a>, admirer of street style and high fashion, loves traveling to Asia (especially to Korea to visit my relatives).</p>
+            <a href="image">Ice cream enthusiast</a>, mother of two dogs, <a href="image">enjoys Korean entertainment</a>, admirer of street style and high fashion, loves traveling to Asia (especially to Korea to visit my relatives).
+        </p>
+        <img class="selfPortrait" src="images/Self Portrait.jpg">
     </div>
     
-    <!-- MOUSEOVER -->
+    <!-- MOUSEOVER 1-->
       <!-- <div id="hover-div">
-          <img class="popover1" style="height: 100px;" src="https://i.ytimg.com/vi/dBpOCditrv4/maxresdefault.jpg" title="some title text"/>
-      </div> -->
+          <img class="popover1" style="height: 100px;" src="images/RWHK2.jpg" title="Mini Schnauzer & Yorkie"/>
+      </div>
+
+      <script>
+        $('.popover1').on({
+            mousemove: function(e) {
+                $(this).next('#big').css({
+                    top: e.pageY - 260 - 25, // height of image and title area plus some
+                    left: e.pageX + -120
+                });
+            },
+            mouseenter: function() {
+                var $big = $('<img />', {'class': 'big_img1', src: this.src}),
+                    $title = $('<div class="title"/>').html(this.title),
+                    $frame = $('<div id="big" />');
       
-      <img src="images/Bellagio1.jpg" class="img img_doggies">
+                $frame.append($big).append($title);
+      
+                $(this).after($frame);
+            },
+            mouseleave: function() {
+                $('#big').remove();
+            }
+        });
+      </script>
+       -->
+
+       <!-- MOUSEOVER 2-->
+      <!-- <img src="images/Bellagio1.jpg" class="img img_doggies">
       <img src="images/FSPB2.jpg" class="img img_2">
       <img src="images/RWHK2.jpg" class="img img_3">
       <img src="img/film.jpg" class="img img_film">
       <img src="img/graphics.png" class="img img_graphics">
       <img src="img/google.jpg" class="img img_google">
       <img src="img/moviehunt.png" class="img img_moviehunt">
-      <img src="img/qsc.png" class="img img_qsc">
+      <img src="img/qsc.png" class="img img_qsc"> -->
 
     <!--FOOTER-->
     <footer id="footer">

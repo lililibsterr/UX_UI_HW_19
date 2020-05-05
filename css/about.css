@@ -39,6 +39,7 @@
     left: 10px; 
     position: relative;
 }
+
 #big { 
     z-index: 999; 
     position:absolute; 
@@ -89,13 +90,23 @@
     grid-template-rows: 600px;
     grid-template-columns: 450px 450px;
     grid-template-areas: 
-    "text .";
+    "text portrait";
+    background-color: #FBF3E8;
 }
 
 .aboutText {
     font-family: 'Open Sans';
     font-size: 20px;
     grid-area: text;
+}
+
+.selfPortrait {
+    grid-area: portrait;
+    height: 400px;
+    width: auto;
+    margin-left: 25%;
+    margin-right: 50%;
+    margin-top: 10%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -107,7 +118,7 @@
         grid-template-rows: 700px;
         grid-template-columns: 300px 300px;
         grid-template-areas: 
-        "text .";
+        "text portrait";
     }
     .aboutText {
         font-size: 18px;
@@ -124,7 +135,7 @@
         grid-template-columns: 280px;
         grid-template-areas: 
         "text"
-        ".";
+        "portrait";
     }
     .aboutText {
         font-size: 14px;
